@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:P</title>
+</head>
+<body>
+    
+    olha, isso é mt legal: <br>
+
+    <img src='0.png' id="paia"></img> <br>
+
+
+    é sério, clica: (várias vezes) <br>
+    <button onclick="funcaum()">uau</button>
+
+
+    <br><br><br><br><br><br>
+
+
+aé, isso vai somar as coisas pq sim pq uau, javascript, uou <br>
+<input type="number" id="uno">
+<input type="number" id="dos"> <br>
+<button onclick="matematics()">uau matematico</button>
+<p id="result">resultado</p>
+
+
+<script>
+
+let frame = 0;
+
+
+function matematics(){
+    
+    const uno = parseFloat(document.getElementById("uno").value);
+    const dos = parseFloat(document.getElementById("dos").value);
+    let resul = (uno+dos);
+    document.getElementById("result").innerHTML = "resultado "+resul ;
+
+}
+
+
+
+function funcaum(){
+
+frame = frame + 1;
+
+if (frame == 1){
+document.getElementById("paia").src = "1.png";
+}
+
+if (frame == 2){
+document.getElementById("paia").src = "2.png";
+}
+
+if (frame == 3){
+document.getElementById("paia").src = "3.png";
+}
+
+if (frame == 4){
+document.getElementById("paia").src = "4.png";
+}
+
+if (frame == 5){
+document.getElementById("paia").src = "5.png";
+}
+
+if (frame == 6){
+document.getElementById("paia").src = "6.png";
+}
+
+if (frame == 7){
+document.getElementById("paia").src = "7.png";
+}
+
+if (frame == 8){
+document.getElementById("paia").src = "8.png";
+}
+
+
+if (frame == 8){
+frame = 0;
+}
+
+}
+
+</script>
+
+</body>
+</html>
